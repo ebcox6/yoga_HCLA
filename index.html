@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Growth Portfolio Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #e8c6a7, #d6e3f0);
+            color: #333;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffffcc;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #5d3b09;
+        }
+        .button-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #5d3b09;
+            color: #ffffff;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #8a5f37;
+        }
+        .yoga-pose-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .yoga-pose-table th, .yoga-pose-table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        .flip-card {
+            background-color: transparent;
+            width: 150px;
+            height: 100px;
+            perspective: 1000px;
+            margin: 10px auto;
+        }
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            background: #e3e6e3;
+        }
+        .flip-card-back {
+            transform: rotateY(180deg);
+            background: #d6e3f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Your Yoga Journey</h1>
+        <p>Explore the world of yoga as you master a series of poses and reflect on your growth throughout the semester. This project will guide you through the practice, with reflective insights and progress tracking to connect mind, body, and spirit.</p>
+
+        <div class="button-container">
+            <a href="https://docs.google.com/document/d/1CG-QxNgm12BnntoZKymBY83mQHnH4zDxodgx_bxnKgo/edit?usp=sharing" class="btn">Entry Document</a>
+            <a href="https://docs.google.com/document/d/1OBWHAHde5RjcmhrT1I2FTHmtHrUCz473/edit?usp=sharing&ouid=105896195394174929520&rtpof=true&sd=true" class="btn">Yoga Growth Portfolio Template Document</a>
+            <a href="https://docs.google.com/document/d/1_lZvDVPZLepZsgLLruZPn5d3qkejMYAN/edit?usp=sharing&ouid=105896195394174929520&rtpof=true&sd=true" class="btn">Rubric</a>
+        </div>
+
+        <table class="yoga-pose-table">
+            <thead>
+                <tr>
+                    <th>Simple Sun Salutation Poses</th>
+                    <th>Standing Poses</th>
+                    <th>Balancing Poses</th>
+                    <th>Standing Twists</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">Mountain Pose (Tadasana)</div>
+                                <div class="flip-card-back">"Be still, and know that I am God." (Psalm 46:10)</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">Warrior II (Virabhadrasana II)</div>
+                                <div class="flip-card-back">"Be strong and courageous. Do not be afraid." (Joshua 1:9)</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">Tree Pose (Vrksasana)</div>
+                                <div class="flip-card-back">"He is like a tree planted by streams of water." (Psalm 1:3)</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">Revolved Triangle Pose</div>
+                                <div class="flip-card-back">"Create in me a pure heart, O God." (Psalm 51:10)</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <!-- Additional rows with more poses -->
+            </tbody>
+        </table>
+
+        <div class="button-container">
+            <img src="https://example.com/yoga-studio-image.jpg" alt="Yoga Studio" style="max-width: 100%; border-radius: 15px; margin-top: 20px;">
+        </div>
+    </div>
+</body>
+</html>
